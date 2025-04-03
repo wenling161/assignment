@@ -100,7 +100,7 @@
                             <h4 class="card-title">Payment Details</h4>
                         </div>
                         <div class="card-body">
-                            <form action="payment-2.php" method="POST">
+                            <form action="process_payment.php" method="POST">
                                 <?php
                                     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['doPayment'])) {
                                         if (isset($_POST['checked']) && isset($_POST['quantity'])) {
